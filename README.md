@@ -2,12 +2,13 @@
 
 Summary of fluent python.
 
-Deploy address: https://codebook2024.github.io/fluent-python/
+Site address: https://codebook2024.github.io/fluent-python/
 
 ## Commands
 
 * `mkdocs serve` - Start the live-reloading docs server.
 * `mkdocs build` - Build the documentation site.
+* `mkdocs gh-deploy` - Deploy on github.
 * `mkdocs -h` - Print help message and exit.
 
 ## Project layout
