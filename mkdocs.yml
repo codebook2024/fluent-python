@@ -2,3 +2,87 @@ site_name: Fluent Python Book
 
 theme:
   name: material
+  logo: images/logo.png
+  favicon: images/logo.png
+  language: en
+  features:
+    - content.tooltips
+    - content.code.annotate
+    - content.code.select    
+    - search.highlight
+    - search.share
+    - navigation.tracking
+    - navigation.instant
+    # - navigation.tabs
+    # - navigation.tabs.sticky
+    # - navigation.sections
+    # - navigation.expand
+    # - navigation.path
+    # - navigation.indexes 
+    # - toc.integrate
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default 
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle: 
+        icon: material/brightness-4
+        name: Switch to system preference
+plugins:
+  - search:
+      lang: en
+  
+  #image
+  - glightbox
+
+
+markdown_extensions:
+
+  - pymdownx.superfences:
+        custom_fences:
+          - name: mermaid
+            class: mermaid
+            format: !!python/name:pymdownx.superfences.fence_code_format
+
+  #python code
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+  #image
+  - attr_list
+  - md_in_html
+
+  #text formatting
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+
+  #Grid
+  - attr_list
+  - md_in_html
+
+
+
+nav:
+  - "Preface": "index.md"
+  # - "Chapter 1: The Python Data Model":
+  #     - "Intro": "chapters/1/index.md"
